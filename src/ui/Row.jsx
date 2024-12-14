@@ -13,16 +13,18 @@ function Row({ text, num }) {
         <span className="flex h-[54px] min-w-[54px] items-center justify-center rounded-[8px] border border-black-shade-5 bg-black-shade-4 text-white max-sm:h-11 max-sm:min-w-11">
           0{num}
         </span>
-        <div className="flex flex-col justify-center gap-[14px]">
-          <p className="text-xl text-white max-sm:text-[17px] max-sm:font-medium">
-            {text}
-          </p>
-          {open && (
-            <p>
+        <div className="flex items-center">
+          <div
+            className={`grid grid-rows-[28px_0fr] transition-all duration-[250] ${open ? "grid-rows-[28px_1fr]" : ""}`}
+          >
+            <p className="text-xl text-white max-sm:text-[17px] max-sm:font-medium">
+              {text}
+            </p>
+            <p className="overflow-hidden">
               StreamVibe is a streaming service that allows you to watch movies
               and shows on demand.
             </p>
-          )}
+          </div>
         </div>
         <div
           className={`ml-auto flex w-fit ${open ? "items-start" : "items-center"}`}
