@@ -8,6 +8,7 @@ import { useMoviesData } from "../features/moviesAndShows/useMoviesData";
 import ScrollToTop from "./ScrollToTop";
 import { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+import "../styles/skeleton.css";
 
 function AppLayout() {
   const { data } = useMoviesData();
