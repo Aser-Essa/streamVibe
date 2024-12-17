@@ -1,5 +1,5 @@
-import Skeleton from "react-loading-skeleton";
 import { HiOutlinePlayCircle } from "react-icons/hi2";
+import Skeleton from "react-loading-skeleton";
 
 // eslint-disable-next-line react/prop-types
 function EpisodeLoading({ idx }) {
